@@ -1,0 +1,20 @@
+<template name="recipeList">
+	<form class="main">
+		<div class="control-group">
+			<div class="controls">
+				<input name="searchString" type="text" value="" placeholder="Ingredient or Dish Name"/>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="controls">
+				<input type="submit" value="Search" class="btn btn-primary"/>
+			</div>
+		</div>
+	</form>
+  <div class="recipe-list">
+    {{#each recipeList}}
+      {{> recipeItem}}
+    {{/each}}
+  </div>
+</template>

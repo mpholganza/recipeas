@@ -1,0 +1,14 @@
+<template name="recipeItem">
+  <div class="recipe-item">
+		<div class="recipe-content">
+   		<h3>{{name}}</h3>
+			<p>{{description}}</p>
+		</div>
+		<!--
+		{{#if ownRecipe}}
+		<a href="{{pathFor 'recipeEdit'}}" class="discuss btn">Edit</a>
+		{{/if}}
+		-->
+		<a href="{{pathFor 'recipePage'}}" class="discuss btn">Info</a>
+  </div>
+</template>
